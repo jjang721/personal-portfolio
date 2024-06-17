@@ -1,5 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import headshot from '../assets/img/Jang_Justin_Headshot.jpg'
+import TrackVisibility from "react-on-screen";
+import { isVisible } from "@testing-library/user-event/dist/utils";
 
 
 // const observer = new IntersectionObserver((entries) => {
@@ -22,6 +24,9 @@ export const About = () => {
         <Container>
             <Row>
                 <Col>
+                <TrackVisibility>
+                {({ isVisible }) =>
+                    <div className={isVisible ? "animate__animated animate__backInUp": ""}>
                     <h2>About Me</h2>
                     <img className="img_deg" src={headshot} />
                     <p>    Hello! I'm a passionate developer with a knack for creating dynamic 
@@ -31,7 +36,8 @@ export const About = () => {
                                 you can find me playing the violin in Brown University's Orchestra, working out, or playing basketball
                                 at the Omac. I'm always eager to learn and grow, and I look forward 
                                 to collaborating on exciting projects. </p>
-              
+                                </div>}
+              </TrackVisibility>
                 </Col>
             </Row>
         </Container>

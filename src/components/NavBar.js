@@ -3,8 +3,8 @@ import {Navbar, Container, Nav} from 'react-bootstrap';
 import logo from '../assets/img/logo.svg'
 import linkedin from '../assets/img/linkedin.svg'
 import git from '../assets/img/git.svg'
-import email from '../assets/img/email.svg'
 import ig from '../assets/img/ig.svg'
+
 
 
 export const NavBar = () => {
@@ -46,9 +46,9 @@ export const NavBar = () => {
         </Nav>
         <span className="navbar-text">
           <div className="social-icon">
-            <a href="#"><img src={linkedin} alt="" /></a>
-            <a href="#"><img src={git} alt="" /></a>
-            <a href="#"><img src={email} alt="" /></a>
+            <a href="https://www.linkedin.com/in/justin-jang-995b322a0/"><img src={linkedin} alt="" /></a>
+            <a href="https://github.com/jjang721"><img src={git} alt="" /></a>
+            {/* <a href="#"><img src={email} alt="" /></a> */}
             <a href="#"><img src={ig} alt="" /></a>
           </div>
           <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
