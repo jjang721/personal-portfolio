@@ -2,7 +2,9 @@ import { useState, useEffect} from 'react';
 import { Container, Row, Col } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-image.svg";
-
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+import { isVisible } from '@testing-library/user-event/dist/utils';
 
 
 export const Banner = () => {
@@ -47,6 +49,9 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={10} md={5} xl={7}>
+                    <TrackVisibility>
+                    {({ isVisible }) =>
+                    <div className={isVisible ? "animate__animated animate__backInLeft": ""}>
                     {/* <span className="tagline">
                         Welcome to my website
                     </span> */}
@@ -58,6 +63,8 @@ export const Banner = () => {
                         <button onClick={(() => console.log("connect"))}>
                             Lets connect<ArrowRightCircle size={25}/>
                         </button>
+                        </div>}
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Image"/>
