@@ -400,6 +400,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: black;
 }
+.projects-container {
+  display: flex;
+  flex-direction: row; /* Adjust this if you want wrapping behavior */
+  flex-wrap: wrap;
+  gap: 12px; /* Adjust gap between cards as needed */
+}
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -475,7 +481,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #eec6a3 -5.91%, #6088f3 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;

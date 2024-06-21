@@ -44,11 +44,11 @@ export const Skills = () => {
                              </div>
                              <div className="item">
                                 <img src={backend} alt="Image" />
-                                <h5>Brands</h5>
+                                <h5>Database Management</h5>
                              </div>
                              <div className="item">
                                 <img src={lastskill} alt="Image" />
-                                <h5>Logos</h5>
+                                <h5>Data Strcutures and Algorithms</h5>
                              </div>
                         </Carousel>
                     </div>

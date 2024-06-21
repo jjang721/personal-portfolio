@@ -26,7 +26,7 @@ export const About = () => {
                 <Col>
                 <TrackVisibility>
                 {({ isVisible }) =>
-                    <div className={isVisible ? "animate__animated animate__backInUp": ""}>
+                    <div className={isVisible ? "animate__animated animate__backInUp animate__slow": ""}>
                     <h2>About Me</h2>
                     <img className="img_deg" src={headshot} />
                     <p>    Hello! I'm a passionate developer with a knack for creating dynamic 

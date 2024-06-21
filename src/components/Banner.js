@@ -51,7 +51,7 @@ export const Banner = () => {
                     <Col xs={10} md={5} xl={7}>
                     <TrackVisibility>
                     {({ isVisible }) =>
-                    <div className={isVisible ? "animate__animated animate__backInLeft": ""}>
+                    <div className={isVisible ? "animate__animated animate__backInLeft animate__slow": ""}>
                     {/* <span className="tagline">
                         Welcome to my website
                     </span> */}

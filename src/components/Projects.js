@@ -25,18 +25,7 @@ export const Projects = () => {
                     <Col>
                         <h2>Projects</h2>
                         <p>These are a list of my personal projects</p>
-                        {/* <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                            <Nav.Item>
-                                <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                        <Tab.Content>
-                            <Tab.Pane eventKey="first">
-                                <Row> */}
+                        <div className="projects-container">
                                     {
                                         projects.map((project, index) => {
                                             return (
@@ -46,6 +35,45 @@ export const Projects = () => {
                                             )
                                         })
                                     }
+                                    {
+                                        projects.map((project, index) => {
+                                            return (
+                                                <ProjectCard
+                                                key={index}
+                                                {...project} />
+                                            )
+                                        })
+                                    }
+                                    {
+                                        projects.map((project, index) => {
+                                            return (
+                                                <ProjectCard
+                                                key={index}
+                                                {...project} />
+                                            )
+                                        })
+                                    }
+                                    {
+                                        projects.map((project, index) => {
+                                            return (
+                                                <ProjectCard
+                                                key={index}
+                                                {...project} />
+                                            )
+                                        })
+                                    }
+                                     {
+                                        projects.map((project, index) => {
+                                            return (
+                                                <ProjectCard
+                                                key={index}
+                                                {...project} />
+                                            )
+                                        })
+                                    }
+                                    
+                                    
+    
                                 {/* </Row>
                             </Tab.Pane>
                             <Tab.Pane eventKey="second">
@@ -56,6 +84,7 @@ export const Projects = () => {
                             </Tab.Pane>
                         </Tab.Content>
                         </Tab.Container> */}
+                        </div>
                     </Col>
                 </Row>
             </Container>
