@@ -56,7 +56,7 @@ export const Banner = () => {
                         Welcome to my website
                     </span> */}
                     <h1>
-                        <span className="wrap"> {"Hi, I'm Justin Jang"}
+                        <span className="wrap"> {"Hi, I'm Justin"}
                         </span>
                     </h1>
                         <p>Welcome to my portfolio!</p>
