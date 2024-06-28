@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import headshot from '../assets/img/Jang_Justin_Headshot.jpg'
+import headshot from '../assets/img/Screenshot 2024-06-25 at 7.06.25 PM.png'
 import TrackVisibility from "react-on-screen";
 import { isVisible } from "@testing-library/user-event/dist/utils";
 
