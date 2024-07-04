@@ -35,7 +35,7 @@ export const About = () => {
                                 my skills in React, JavaScript, and web development. When I'm not coding, 
                                 you can find me playing the violin in Brown University's Orchestra, working out, or playing basketball
                                 at the Omac. I'm always eager to learn and grow, and I look forward 
-                                to collaborating on exciting projects! </p>
+                                to collaborating on exciting projects! Not sure if I will use this </p>
                                 </div>}
               </TrackVisibility>
                 </Col>
